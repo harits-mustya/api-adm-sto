@@ -24,16 +24,16 @@ def get_odbc_driver(driver_env_variable: str) -> str:
 # API Key
 SECRET_KEY = "customer_satisfaction"
 
-# DB Connection for Flash Sale Authentication Database
+# DB Connection for MASTER USER
 AUTH_DB_DRIVER = get_odbc_driver("AUTH_DB_DRIVER")
-AUTH_DB_SERVER = os.getenv("AUTH_DB_SERVER", "10.59.240.229")
-AUTH_DB_NAME = os.getenv("AUTH_DB_NAME", "NewFlashSale_Dev")
-AUTH_DB_USERNAME = os.getenv("AUTH_DB_USERNAME", "SCSD")
-AUTH_DB_PASSWORD = os.getenv("AUTH_DB_PASSWORD", "kuDTe5:@K9")
+AUTH_DB_SERVER = os.getenv("AUTH_DB_SERVER", "PUT YOUR DB SERVER")
+AUTH_DB_NAME = os.getenv("AUTH_DB_NAME", "PUT YOUR NAME DB SERVER")
+AUTH_DB_USERNAME = os.getenv("AUTH_DB_USERNAME", "USERNAME")
+AUTH_DB_PASSWORD = os.getenv("AUTH_DB_PASSWORD", "P4SSW0RD")
 
-# DB Connection for Big Data Information Database
+# DB Connection for STRUCTURE ORGANIZATION
 INFO_DB_DRIVER = get_odbc_driver("INFO_DB_DRIVER")
-INFO_DB_SERVER = os.getenv("INFO_DB_SERVER", "10.59.239.45")
-INFO_DB_NAME = os.getenv("INFO_DB_NAME", "ADMBigDataStaging")
-INFO_DB_USERNAME = os.getenv("INFO_DB_USERNAME", "eims_itinv")
-INFO_DB_PASSWORD = os.getenv("INFO_DB_PASSWORD", "4dm1n.e1ms")
+INFO_DB_SERVER = os.getenv("INFO_DB_SERVER", "PUT YOUR DB SERVER")
+INFO_DB_NAME = os.getenv("INFO_DB_NAME", "PUT YOUR NAME DB SERVER")
+INFO_DB_USERNAME = os.getenv("INFO_DB_USERNAME", "USERNAME")
+INFO_DB_PASSWORD = os.getenv("INFO_DB_PASSWORD", "P@SSW0RD")
