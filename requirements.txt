@@ -7,3 +7,5 @@ logging
 secrets
 hashlib
 pyodbc
+
+<!-- install all extension by script "pip install -r requirementes.txt-->
