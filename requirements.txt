@@ -1,0 +1,9 @@
+Flask
+wfastcgi
+bcrypt
+jwt
+datetime
+logging
+secrets
+hashlib
+pyodbc
