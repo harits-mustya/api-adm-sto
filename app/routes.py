@@ -116,7 +116,7 @@ def init_routes(app):
             conn = get_info_db_connection()
             cursor = conn.cursor()
             cursor.execute("""
-            SELECT npk, name, email, jabatan,dir,div,dept FROM HRIS_TrAD where email like '%@daihatsu%' ORDER BY npk 
+            PUT YOUR QUERY HERE TO GET EMPLOYEE DATA FROM YOUR TABLE 
             """)
             rows = cursor.fetchall()
 
@@ -258,7 +258,7 @@ def init_routes(app):
             cursor = conn.cursor()
 
             # Execute the SQL query to fetch the user by NPK
-            cursor.execute("SELECT npk, name, email, jabatan FROM HRIS_TrAD WHERE npk = ?",(user_id,),)
+            cursor.execute("PUT YOUR QUERY HERE TO GET EMPLOYEE DATA FROM YOUR TABLE WHERE npk = ?",(user_id,),)
             row = cursor.fetchone()
 
             # Check if the user was found
@@ -317,7 +317,7 @@ def init_routes(app):
         try:
             conn = get_info_db_connection()
             cursor = conn.cursor()
-            cursor.execute("SELECT dir, dirName, div, div_name, dept, deptName, npk, name, email, jabatan FROM HRIS_TrAD Where dir = ?",(dir_id,),)
+            cursor.execute("PUT YOUR QUERY HERE TO GET EMPLOYEE DATA FROM YOUR TABLE Where dir = ?",(dir_id,),)
             rows = cursor.fetchall()
 
             # Organize the data into a hierarchical structure
@@ -417,7 +417,7 @@ def init_routes(app):
             conn = get_info_db_connection()
             cursor = conn.cursor()
             cursor.execute(
-                "SELECT div, div_name, dept, deptName, npk, name, email, jabatan FROM HRIS_TrAD WHERE div = ?",
+                "PUT YOUR QUERY HERE TO GET EMPLOYEE DATA FROM YOUR TABLE WHERE div = ?",
                 (div_id,),
             )
             rows = cursor.fetchall()
